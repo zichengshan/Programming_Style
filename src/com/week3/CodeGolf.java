@@ -1,4 +1,4 @@
-package com.Week3;
+package com.week3;
 
 /**
  * Steps in terminal:

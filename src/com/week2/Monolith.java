@@ -1,4 +1,4 @@
-package com.Week2;
+package com.week2;
 
 import java.io.BufferedReader;
 import java.io.File;
