@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a977d9a-7510-4752-96aa-8be192ea0573" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/week4/Ten.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/week4/Nine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/week4/Nine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.Nine">
+  <component name="RunManager" selected="Application.Ten">
     <configuration name="Cookbook" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.week2.Cookbook" />
       <module name="Programming_Style" />
@@ -62,6 +62,21 @@
     </configuration>
     <configuration name="Nine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.week4.Nine" />
+      <module name="Programming_Style" />
+      <option name="PROGRAM_PARAMETERS" value="../pride-and-prejudice.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/week4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.week4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ten" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.week4.Ten" />
       <module name="Programming_Style" />
       <option name="PROGRAM_PARAMETERS" value="../pride-and-prejudice.txt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/week4" />
@@ -107,7 +122,7 @@
       <workItem from="1643391134730" duration="965000" />
       <workItem from="1643392135897" duration="31000" />
       <workItem from="1643392188173" duration="54000" />
-      <workItem from="1643398658725" duration="3010000" />
+      <workItem from="1643398658725" duration="4469000" />
     </task>
     <servers />
   </component>
