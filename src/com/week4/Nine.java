@@ -9,8 +9,7 @@ import java.nio.file.Paths;
 import java.util.*;
 
 public class Nine {
-    private static Map<String, Integer> map = new HashMap<>();
-    private static List<String> stop_words = new ArrayList<>();
+
     private interface NineFunc{
         void call(Object arg, NineFunc func);
     }
@@ -25,6 +24,8 @@ public class Nine {
      * @throws IOException
      */
     public static void readFile(String fileName, NineFunc func) throws IOException {
+        Map<String, Integer> map = new HashMap<>();
+        // func = removeStopWord()
         File file = new File(fileName);
         BufferedReader reader = new BufferedReader(new FileReader(file));
         String strLine = reader.readLine();
@@ -42,25 +43,32 @@ public class Nine {
         func.call(map, new topKWords());
     }
 
+    /**
+     * remove stop words from map
+     */
     private static class removeStopWords implements NineFunc{
         @Override
         public void call(Object arg, NineFunc func) {
             // func == topKWords
+            Map<String, Integer> map = (Map<String, Integer>) arg;
+            List<String> stop_words = null;
             try {
                 stop_words = Arrays.asList(new String(Files.readAllBytes(Paths.get("../stop_words.txt"))).split(","));
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            for (String s : map.keySet()){
-                if(stop_words.contains(s))
+            for(String s : stop_words){
+                if(map.containsKey(s))
                     map.remove(s);
             }
-            func.call(map, null);
+            func.call(map, new no_operation());
         }
     }
 
+    /**
+     * Get the top 25 terms and print them out
+     */
     private static class topKWords implements NineFunc{
-
         @Override
         public void call(Object arg, NineFunc func) {
             // func == no_op
@@ -75,15 +83,14 @@ public class Nine {
                 if (k++ == 25) {break;}
                 System.out.println(m.getKey() + " : " + m.getValue());
             }
-//            func.call(null,null);
+            func.call(null,null);
         }
     }
 
-//    private static class no_op implements NineFunc{
-//        @Override
-//        public void call(Object arg, NineFunc func) {
-//            return;
-//        }
-//    }
-
+    private static class no_operation implements NineFunc{
+        @Override
+        public void call(Object arg, NineFunc func) {
+            return;
+        }
+    }
 }
