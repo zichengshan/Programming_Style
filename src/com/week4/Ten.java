@@ -29,6 +29,7 @@ public class Ten {
 
     public static void main(String[] args) throws IOException {
         TheOne theOne = new TheOne(args[0]);
+        // Larger problem is solved as a pipeline of functions bound together
         theOne.bind(new readFile()).bind(new removeStopWords()).bind(new topKWords());
     }
 
