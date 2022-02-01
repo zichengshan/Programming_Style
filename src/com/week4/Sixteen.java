@@ -182,8 +182,11 @@ public class Sixteen {
         private static void count(String[] event){
             String word = event[1];
             for(char w: word.toCharArray())
-                if(w == 'z')
+                if(w == 'z'){
                     num++;
+                    return;
+                }
+
         }
 
         // print the result
