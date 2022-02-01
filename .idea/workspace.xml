@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4a977d9a-7510-4752-96aa-8be192ea0573" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Ten$readFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Ten$readFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Ten$removeStopWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Ten$removeStopWords.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Ten$topKWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Ten$topKWords.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Ten.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Ten.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/week4/Sixteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/week4/Sixteen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +154,7 @@
       <workItem from="1643392188173" duration="54000" />
       <workItem from="1643398658725" duration="6995000" />
       <workItem from="1643430947473" duration="2864000" />
-      <workItem from="1643672059643" duration="3222000" />
+      <workItem from="1643672059643" duration="4170000" />
     </task>
     <servers />
   </component>

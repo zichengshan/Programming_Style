@@ -5,6 +5,10 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.function.*;
 
+/**
+ * Reference: https://github.com/crista/exercises-in-programming-style/tree/master/16-bulletin-board
+ */
+
 public class Sixteen {
     public static void main(String[] args) {
         EventManager em = new EventManager();
@@ -16,9 +20,13 @@ public class Sixteen {
         em.publish(new String[]{"run",args[0]});
     }
 
+    /**
+     * EventManager class implements the generic bulletin board concept
+     */
     private static class EventManager{
         static HashMap<String,ArrayList<Consumer<String[]>>> subscriptions = new HashMap<>();
 
+        // takes an event type and a handler
         private static void subscribe(String event_type, Consumer<String[]> handler){
             if (subscriptions.containsKey(event_type)){
                 subscriptions.get(event_type).add(handler);
@@ -28,6 +36,7 @@ public class Sixteen {
             }
         }
 
+        // takes an event
         private static void publish(String[] event){
             String event_type = event[0];
             if (subscriptions.containsKey(event_type)){
@@ -48,6 +57,7 @@ public class Sixteen {
             event_manager.subscribe("start", (String[] event)->produce_words(event));
         }
 
+        // split the file and save all the words in terms list
         private static void load(String[] event){
             String path_to_file = event[1];
             // read words in file
@@ -72,6 +82,7 @@ public class Sixteen {
             }
         }
 
+        //publish each term of the terms list -> check whether it is a stop word,
         private static void produce_words(String[] event){
             for (String term : terms){
                 event_manager.publish(new String[]{"word",term});
@@ -90,6 +101,7 @@ public class Sixteen {
             event_manager.subscribe("word", (String[] event)->is_stop_word(event));
         }
 
+        // split the file and save all the stop words in stop_words list
         private static void load(String[] event){
             String str = "";
             try {
@@ -106,6 +118,7 @@ public class Sixteen {
 
         }
 
+        // check whether this word is a valid word
         private static void is_stop_word(String[] event){
             String word = event[1];
             if (!stop_words.contains(word)){
@@ -124,6 +137,7 @@ public class Sixteen {
             event_manager.subscribe("print", (String[] event)->print_freqs(event));
         }
 
+        // if the word is valid, update the map
         private static void increment_count(String[] event){
             String word = event[1];
             map.put(word, map.getOrDefault(word, 0) + 1);
@@ -164,6 +178,7 @@ public class Sixteen {
             event_manager.subscribe("print", (String[] event)->printZNum(event));
         }
 
+        // check whether the word has z character
         private static void count(String[] event){
             String word = event[1];
             for(char w: word.toCharArray())
@@ -171,11 +186,13 @@ public class Sixteen {
                     num++;
         }
 
+        // print the result
         private static void printZNum(String[] event){
             System.out.println("Number of words with z: " + num);
         }
     }
 
+    // starts and ends the word frequency application
     private static class WordFrequencyApplication{
         static private EventManager event_manager;
 
