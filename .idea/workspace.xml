@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a977d9a-7510-4752-96aa-8be192ea0573" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/week5/JarClasses.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/week5/JarClasses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/week5/json-20211205.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen$DataStorage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen$DataStorage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen$EventManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen$EventManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen$StopWordFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen$StopWordFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen$WordFrequencyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen$WordFrequencyApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen$WordFrequencyCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen$WordFrequencyCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen$ZCounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen$ZCounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week4/Sixteen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/week4/Sixteen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/week4/Sixteen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +45,15 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Application.Sixteen">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/week5" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.JarClasses">
     <configuration name="Cookbook" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.week2.Cookbook" />
       <module name="Programming_Style" />
@@ -60,6 +62,21 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.week2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JarClasses" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.week5.JarClasses" />
+      <module name="Programming_Style" />
+      <option name="PROGRAM_PARAMETERS" value="./json-20211205.jar" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/week5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.week5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,6 +180,8 @@
       <workItem from="1643430947473" duration="2864000" />
       <workItem from="1643672059643" duration="4687000" />
       <workItem from="1643685495826" duration="773000" />
+      <workItem from="1643759419075" duration="1423000" />
+      <workItem from="1643865305111" duration="8505000" />
     </task>
     <servers />
   </component>
