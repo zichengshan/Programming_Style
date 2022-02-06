@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a977d9a-7510-4752-96aa-8be192ea0573" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/week5/JarClasses.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/week5/JarClasses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/week5/json-20211205.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/week5/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week5/JarClasses.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week5/JarClasses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week5/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/week5/JarClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/week5/JarClasses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/week5/json-20211205.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/week5/json-java.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +74,7 @@
     <configuration name="JarClasses" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.week5.JarClasses" />
       <module name="Programming_Style" />
-      <option name="PROGRAM_PARAMETERS" value="./json-20211205.jar" />
+      <option name="PROGRAM_PARAMETERS" value="json-20211205.jar" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/week5" />
       <extension name="coverage">
         <pattern>
@@ -144,6 +146,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.week5.Test" />
+      <module name="Programming_Style" />
+      <option name="PROGRAM_PARAMETERS" value="./json-20211205.jar" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/week5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.week5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.week4.test" />
       <module name="Programming_Style" />
@@ -181,8 +198,17 @@
       <workItem from="1643672059643" duration="4687000" />
       <workItem from="1643685495826" duration="773000" />
       <workItem from="1643759419075" duration="1423000" />
-      <workItem from="1643865305111" duration="8505000" />
+      <workItem from="1643865305111" duration="9274000" />
+      <workItem from="1644104093528" duration="6124000" />
     </task>
+    <task id="LOCAL-00001" summary="1. can get all the class names in jar file">
+      <created>1643874660737</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1643874660737</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,5 +228,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="1. can get all the class names in jar file" />
+    <option name="LAST_COMMIT_MESSAGE" value="1. can get all the class names in jar file" />
   </component>
 </project>
