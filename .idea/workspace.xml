@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a977d9a-7510-4752-96aa-8be192ea0573" name="Changes" comment="1. can get all the class names in jar file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/week5/JarClasses.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/week5/JarClasses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/week5/JarClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/week5/JarClasses.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +196,7 @@
       <workItem from="1643759419075" duration="1423000" />
       <workItem from="1643865305111" duration="9274000" />
       <workItem from="1644104093528" duration="7321000" />
+      <workItem from="1644708587432" duration="77000" />
     </task>
     <task id="LOCAL-00001" summary="1. can get all the class names in jar file">
       <created>1643874660737</created>

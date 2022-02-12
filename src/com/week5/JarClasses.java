@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 /**
  * 1. Type "cd Week5" to get into the Week5 folder
  * 2. Type "javac JarClasses.java" to compile
- * 3. Type "java JarClasses json-java.jar" to run the code
+ * 3. Type "java JarClasses.java json-java.jar" to run the code
  */
 
 public class JarClasses {
