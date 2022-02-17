@@ -1,24 +1,32 @@
 package com.week7;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.List;
 
 public class test {
     public static void main(String[] args) throws IOException {
-//        File file = new File("../stop_words.txt");
-//
-//        FileReader fr = new FileReader(file);
-//            int content;
-//            while ((content = fr.read()) != -1) {
-//                System.out.println((char) content);
-//            }
-        StringBuilder stringBuilder = new StringBuilder();
-        char a = '3';
-        a = Character.toLowerCase(a);
-        stringBuilder.append(a);
-        stringBuilder.append('b');
-        System.out.println(stringBuilder.toString());
+        System.out.println(readFile("../pride-and-prejudice.txt"));
+    }
+    public static int readFile(String fileName) throws IOException {
+        List<String> stop_words = Arrays.asList(new String(Files.readAllBytes(Paths.get("../stop_words.txt"))).split(","));
+        int count = 0;
+        File file = new File(fileName);
+        BufferedReader reader = new BufferedReader(new FileReader(file));
+        String strLine = reader.readLine();
+        while (strLine != null) {
+            String[] wordSplit = strLine.split("[^a-zA-Z0-9]+");
+            for (String s : wordSplit) {
+                String w = s.toLowerCase();
+                if(w.length() >= 2 && !stop_words.contains(w))
+                    count++;
+            }
+            strLine = reader.readLine();
+        }
+        // Need to close the reader once finished
+        reader.close();
+        return count;
     }
 }

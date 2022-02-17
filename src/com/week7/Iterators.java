@@ -5,21 +5,34 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Iterators {
     public static void main(String[] args) throws IOException {
-        Iterator<Character> chars = new readFile(args[0]);
-        Iterator<String> words = new allWords(chars);
-        Iterator<String> filters = new filterWords(words);
-        while(filters.hasNext()){
-            System.out.println(filters.next());
+        Iterator<Character> i1 = new readFile(args[0]);
+        Iterator<String> i2 = new allWords(i1);
+        Iterator<String> i3 = new filterWords(i2);
+        Iterator<ArrayList<Map.Entry<String, Integer>>> i4 = new count_and_sort(i3);
+
+        int count = 1;
+
+        while(i4.hasNext()){
+            ArrayList<Map.Entry<String, Integer>> list = i4.next();
+            System.out.println("---------------- Update: " + count + " ---------------------");
+            count++;
+            // Print the top 25 most frequent words
+            int k = 0;
+            for (Map.Entry<String, Integer> m : list) {
+                if (k++ == 25) {break;}
+                System.out.println(m.getKey() + " : " + m.getValue());
+            }
         }
     }
 }
 
+/**
+ * read the file in character
+ */
 class readFile implements Iterator<Character> {
     FileReader fr;
     private int content;
@@ -46,6 +59,9 @@ class readFile implements Iterator<Character> {
     }
 }
 
+/**
+ * concat the chars to word in string
+ */
 class allWords implements Iterator<String> {
 
     private static Iterator<Character> prior;
@@ -62,50 +78,33 @@ class allWords implements Iterator<String> {
         char temp = ' ';
         StringBuilder stringBuilder = new StringBuilder();
 
-        if(!flag)
+        if(prior.hasNext())
+            temp = prior.next();
+        else
             return false;
 
-        if(prior.hasNext()){
-            temp = prior.next();
-        }else{
-            flag = false;
-//            return false;
-        }
-
-        while (Character.isLetterOrDigit(temp) && flag) {
+        while (Character.isLetterOrDigit(temp)) {
             stringBuilder.append(Character.toLowerCase(temp));
-//            System.out.println(temp);
             if(prior.hasNext())
                 temp = prior.next();
             else{
-                flag = false;
                 nextString = stringBuilder.toString();
                 return true;
             }
         }
         nextString = stringBuilder.toString();
         return true;
-//        return prior.hasNext();
     }
 
     @Override
     public String next() {
         return nextString;
-//        StringBuilder stringBuilder = new StringBuilder();
-//        char temp = prior.next();
-//        temp = prior.next();
-//        while (Character.isLetterOrDigit(temp)) {
-//            stringBuilder.append(Character.toLowerCase(temp));
-////            System.out.println(temp);
-//            if(prior.hasNext())
-//                temp = prior.next();
-//            else
-//                return stringBuilder.toString();
-//        }
-//        return stringBuilder.toString();
     }
 }
 
+/**
+ * filter the stop words
+ */
 class filterWords implements Iterator {
     Iterator<String> prior;
     String word;
@@ -129,5 +128,46 @@ class filterWords implements Iterator {
     @Override
     public String next() {
         return word;
+    }
+}
+
+/**
+ * count and sort every 5000 words
+ */
+class count_and_sort implements Iterator<ArrayList<Map.Entry<String, Integer>>>{
+
+    private Map<String, Integer> map = new HashMap<>();
+    private Iterator<String> prior;
+    int count = 0;
+    String str;
+    public count_and_sort(Iterator<String> p){
+        prior = p;
+    }
+    @Override
+    public boolean hasNext() {
+        count = 0;
+        if(prior.hasNext()){
+            str = prior.next();
+        }else
+            return false;
+
+        while(count == 0 || count % 5000 != 0){
+            map.put(str, map.getOrDefault(str, 0) + 1);
+            count++;
+            if(prior.hasNext()){
+                str = prior.next();
+            }else{
+                return true;
+            }
+        }
+        return true;
+    }
+
+    @Override
+    public ArrayList<Map.Entry<String, Integer>> next() {
+        // Sort the hashmap
+        ArrayList<Map.Entry<String, Integer>> list = new ArrayList<>(map.entrySet());
+        Collections.sort(list, (o1, o2) -> { return -o1.getValue().compareTo(o2.getValue());});
+        return list;
     }
 }
