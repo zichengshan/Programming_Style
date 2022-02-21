@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a977d9a-7510-4752-96aa-8be192ea0573" name="Changes" comment="1. can get all the class names in jar file">
-      <change afterPath="$PROJECT_DIR$/src/com/week7/FloatStreamExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/week7/Streams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/Iterators.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/Iterators.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/allWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/allWords.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/count_and_sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/count_and_sort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/filterWords.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/filterWords.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/readFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/readFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/week7/test.java" beforeDir="false" />
-    </list>
+    <list default="true" id="4a977d9a-7510-4752-96aa-8be192ea0573" name="Changes" comment="1. can get all the class names in jar file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -309,7 +298,7 @@
       <workItem from="1644903902352" duration="6404000" />
       <workItem from="1644974837309" duration="1278000" />
       <workItem from="1645072229358" duration="23000000" />
-      <workItem from="1645308773397" duration="7652000" />
+      <workItem from="1645308773397" duration="7676000" />
     </task>
     <task id="LOCAL-00001" summary="1. can get all the class names in jar file">
       <created>1643874660737</created>
