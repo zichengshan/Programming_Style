@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a977d9a-7510-4752-96aa-8be192ea0573" name="Changes" comment="1. can get all the class names in jar file">
-      <change afterPath="$PROJECT_DIR$/src/com/week8/TwentyNine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/week8/TwentyNineTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/week8/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/Streams.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/Streams.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week7/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/week8/TwentyNineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/week8/TwentyNineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,8 +224,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwentyNineTest" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.week8.TwentyNineTest" />
+    <configuration name="TwentyNine" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.week8.TwentyNine" />
       <module name="Programming_Style" />
       <option name="PROGRAM_PARAMETERS" value="../pride-and-prejudice.txt" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/week8" />
@@ -322,7 +317,7 @@
       <workItem from="1644974837309" duration="1278000" />
       <workItem from="1645072229358" duration="23000000" />
       <workItem from="1645308773397" duration="7676000" />
-      <workItem from="1645829993186" duration="8349000" />
+      <workItem from="1645829993186" duration="15727000" />
     </task>
     <task id="LOCAL-00001" summary="1. can get all the class names in jar file">
       <created>1643874660737</created>
