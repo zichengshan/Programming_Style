@@ -140,7 +140,7 @@ public class TwentyNine {
     }
 
     /**
-     * WordFrequencyManager is used to
+     * WordFrequencyManager is used to count the frequency af each word sort the map.
      */
     private static class WordFrequencyManager extends ActiveWFObject {
         Map<String, Integer> map = new HashMap<>();
