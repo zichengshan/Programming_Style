@@ -12,10 +12,6 @@ public class TwentyNine {
         Queue<Object[]> q = new LinkedBlockingQueue<>();
         Boolean stopMe = false;
 
-        public ActiveWFObject() {
-            this.start();
-        }
-
         /**
          * stopThread() is used to stop the thread
          */
@@ -211,6 +207,11 @@ public class TwentyNine {
 
         WordFrequencyController wordFrequencyController = new WordFrequencyController();
         sendMessage(wordFrequencyController, new Object[]{"run", dataStorageManager});
+
+        wordFrequencyManager.start();
+        stopWordsManager.start();
+        dataStorageManager.start();
+        wordFrequencyController.start();
 
         // # Wait for the active objects to finish
         wordFrequencyManager.join();

@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a977d9a-7510-4752-96aa-8be192ea0573" name="Changes" comment="1. can get all the class names in jar file">
-      <change afterPath="$PROJECT_DIR$/src/com/week8/ThirtyTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/week8/ThirtyTwoNew.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/Thirty$Process_words.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/Thirty$Process_words.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/Thirty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/Thirty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/TwentyNine$ActiveWFObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/TwentyNine$ActiveWFObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/TwentyNine$DataStorageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/TwentyNine$DataStorageManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/TwentyNine$StopWordsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/TwentyNine$StopWordsManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/TwentyNine$WordFrequencyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/TwentyNine$WordFrequencyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/TwentyNine$WordFrequencyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/TwentyNine$WordFrequencyManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/TwentyNine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/TwentyNine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Programming_Style/com/week8/test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/week8/ThirtyTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/week8/ThirtyTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/week8/TwentyNine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/week8/TwentyNine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +75,7 @@
       <recent name="$PROJECT_DIR$/src/com/week5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Thirty">
+  <component name="RunManager" selected="Application.ThirtyTwoNew">
     <configuration name="Cookbook" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.week2.Cookbook" />
       <module name="Programming_Style" />
@@ -240,6 +250,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ThirtyTwo" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.week8.ThirtyTwo" />
+      <module name="Programming_Style" />
+      <option name="PROGRAM_PARAMETERS" value="../pride-and-prejudice.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/week8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.week8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThirtyTwoNew" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.week8.ThirtyTwoNew" />
+      <module name="Programming_Style" />
+      <option name="PROGRAM_PARAMETERS" value="../pride-and-prejudice.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/week8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.week8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TwentyNine" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.week8.TwentyNine" />
       <module name="Programming_Style" />
@@ -347,7 +387,8 @@
       <workItem from="1644974837309" duration="1278000" />
       <workItem from="1645072229358" duration="23000000" />
       <workItem from="1645308773397" duration="7676000" />
-      <workItem from="1645829993186" duration="22088000" />
+      <workItem from="1645829993186" duration="25050000" />
+      <workItem from="1646028089320" duration="9069000" />
     </task>
     <task id="LOCAL-00001" summary="1. can get all the class names in jar file">
       <created>1643874660737</created>
